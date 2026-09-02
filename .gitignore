@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+.virtual_documents/
+
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
