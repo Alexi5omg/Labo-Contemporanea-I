@@ -1,0 +1,47 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{authblk} % Required for adding multiple author affiliations
+\IEEEoverridecommandlockouts
+\input{Configuracion}
+
+\begin{document}
+
+%%%%%% Titulo %%%%%
+%\title{\textcolor{black}{Aplicaciones del transistor BJT \\como conmutador}}  
+\title{%
+	\texorpdfstring
+	{\bloquetitulologos}
+	{}%
+}
+%%%%% Datos %%%%%
+\author{Iván Bautista Alvarado}
+\author{Juan Alexis Hernández Hernández}
+\author{Ramsés Ricardo Sánchez Ledezma}
+\affil{Instituto de Ciencias Físicas, Universidad Nacional Autónoma de México, Av. Universidad S/N, col. Chamilpa, Cuernavaca, Morelos, C. P. 62210 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 31 de julio de 2026}
+
+\twocolumn[
+\begin{@twocolumnfalse}
+\maketitle
+\end{@twocolumnfalse}
+
+%%%%% Resumen %%%%%
+\begin{abstract}
+Se midió la velocidad de deriva electrónica ($v_d$) en una mezcla de $1\%$ de argón y $99\%$ de nitrógeno mediante la técnica de Townsend pulsada, y por otro lado también se estudió el efecto Ramsauer-Townsend en un bulbo 2D21. El primer fenómeno se pudo observar para un intervalo de $10.1$ Torr a $200.2$ Torr, visualizándose en tres segmentos: un aumento rápido, una disminución y nuevamente una subida pero ahora de manera controlada. Los resultados también mostraron que la $v_d$ es independiente de la presión del medio, únicamente concuerda con la razón $E/N$. Para el segundo experimento se registraron los valores del voltaje del ánodo ($v_a$) y de la rejilla-blindaje ($v_{rb}$) conforme se aumentaba el voltaje del cátodo ($v_c$) a un voltaje del filamento ($v_f$) determinada ($2\,V$, $3\,V$ y $4\,V$) observándose una tendencia creciente para $v_{rb}$ y con un máximo para $v_a$.
+\vspace{2mm}
+
+%%%%% Palabras clave %%%%%
+\textit{Palabras Clave: Ramsauer, Townsend, Torr, 2D21, argón, nitrógeno, deriva, velocidad, gas, filamento, ánodo, cátodo}
+\end{abstract}
+\bigskip]
+
+%%%%% Partes del reporte %%%%%
+\input{1_Introducción}\\
+\input{2_Procedimiento}\\
+\input{3_Resultados y Análisis}\\
+\input{4_Conclusiones}\\
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+\input{5_Bibliografia}
+%\input{6_Anexo}
+
+\end{document}

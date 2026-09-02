@@ -1,0 +1,81 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% PRINCIPALES PAQUETES %%%%%%%%
+%      No modificar esta area        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref} 
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{nccmath}
+\usepackage{subfigure}
+\usepackage{amsfonts,latexsym} % para tener disponibilidad de diversos simbolos
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{array,colortbl}
+\usepackage{ifpdf}
+\usepackage{rotating}
+%\usepackage{cite}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{listings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CREAR Y REESCRIBIR ALGUNOS COMANDOS %%%
+%              No modificar esta area     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\IEEEkeywordsname{Palabras clave}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%           CONFIGURACION             %%%
+%              No modificar esta area     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor} %% Con este comando se especifican como pueden seprarse las sílabas adecuadamente en caso una palabra quede en dos lineas diferentes de texto
+\graphicspath{ {figs/} }  %%Ruta donde se encuentran las imágenes, que esté vacio indica que las imagenes están dentro de la misma carpeta que contiene el archivo .tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ==================================================
+% LOGOTIPOS Y TÍTULO EN UN SOLO BLOQUE
+% ==================================================
+
+\newlength{\alturalogo}
+\setlength{\alturalogo}{2.7cm}
+
+\newcommand{\bloquetitulologos}{%
+	\makebox[\textwidth][c]{%
+		% ----- Logotipo izquierdo -----
+		\begin{minipage}[c][3.05cm][c]{0.17\textwidth}
+			\raggedright
+			\includegraphics[
+			height=\alturalogo,
+			width=\linewidth,
+			keepaspectratio
+			]{figs/escudos/escudo-ciencias.png}%
+		\end{minipage}%
+		% ----- Título central -----
+		\begin{minipage}[c][3.05cm][c]{0.55\textwidth}
+			\centering
+			Efecto\\[-0.05em]
+			Ramsauer-Townsend
+		\end{minipage}%
+		% ----- Logotipo derecho -----
+		\begin{minipage}[c][3.05cm][c]{0.28\textwidth}
+			\raggedleft
+			\includegraphics[
+			height=\alturalogo,
+			width=\linewidth,
+			keepaspectratio
+			]{figs/escudos/escudo-icf.png}%
+		\end{minipage}%
+	}%
+}
