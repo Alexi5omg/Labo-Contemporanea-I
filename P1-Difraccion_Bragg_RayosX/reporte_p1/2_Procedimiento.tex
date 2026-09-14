@@ -2,9 +2,40 @@
 
 \begin{figure}%[H]
 	\centering
-	\includegraphics[scale=0.14]{figs/NOMBRE_FOTO.jpeg}
-	\caption{Diagrama del arreglo experimental}
-	\label{fig:NOMBRE_FOTO}
+	\includegraphics[scale=0.6]{figs/PORTACRISTALES.png}
+	\caption{Acomodo del cristal en el portacristales del TEL-X-OMETER 580. \cite{Manual_Bragg-rayosx}}
+	\label{fig:PORTACRISTALES}
 \end{figure}
 
-\noindent Texto
+\begin{figure}%[H]
+	\centering
+	\includegraphics[scale=0.05]{figs/CONTENEDOR-ORTEC.jpg}
+	\caption{Contenedor ORTEC 401A BIN con un los módulos 719 TIME, 478 BIAS SUPPLY, 575 AMPLIFIER y 775 COUNTER (el módulo 428 DETECTOR BIAS SUPPLY que también aparece no se utilizó en esta práctica).}
+	\label{fig:CONTENEDOR-ORTEC}
+\end{figure}
+
+\begin{figure}%[H]
+	\centering
+	\includegraphics[scale=0.45]{figs/CONEXIONES_GEIGER-MULLER.png}
+	\caption{Diagrama de conexiones del contador Geiger-Muller y los módulos para su manipulación.}
+	\label{fig:CONEXIONES_GEIGER-MULLER}
+\end{figure}
+
+\begin{figure}%[H]
+	\centering
+	\includegraphics[scale=0.6]{figs/MONTAJE_TEL-X-OMETER.png}
+	\caption{Vista del montaje y funcionanmiento del TEL-X-OMETER 580. \cite{Practica_referencia}}
+	\label{fig:MONTAJE_TEL-X-OMETER}
+\end{figure}
+
+\noindent Para la configuración de los rayos x y el cristal se utlilizó un TEL-X-OMETER 580. Primero se alzó su tapa y, con unas pinzas, se montó un cristal de NaCl en el porta cristales y con un desarmador de estrella se ajustó el tornillo de empalme; la cara del cristal con apariencia \enquote*{mate} quedó en la posición de reflexión (Figura \ref{fig:PORTACRISTALES}).
+
+Posteriormente, se colocó un colimador de boquilla/rosca de $1\,mm$ en la salida del tubo de rayos x y dos colimadores de placa sobre el brazo giratorio en los compartimientos 13 y 18, de tamaños de $3\,mm$ y $1\,mm$ respectivamente.
+
+Para la parte de la detección y conteo de los rayos x se utilizó un tubo Geiger-Muller y un contenedor ORTEC 401A BIN (ya montado con un los módulos: 719 TIME, 478 BIAS SUPPLY, 575 AMPLIFIER y 775 COUNTER, todos de la marca ORTEC) para su manipulación (Figura \ref{fig:CONTENEDOR-ORTEC}). Las conexiones se realizaron de acuerdo al diagrama de la Figura \ref{fig:CONEXIONES_GEIGER-MULLER} donde se utilizaron cinco cables coaxiales (el que va hacia la fuente de poder fue un cable de alto voltaje; nótese que se conecta en la parte trasera del contenedor). El tubo Geiger-Muller se colocó en el compartimiento 27 del brazo giratorio del TEL-X-OMETER (Figura \ref{fig:MONTAJE_TEL-X-OMETER}).
+
+Después, se ajustó el voltaje del TEL-X-OMETER en $20\,kV$, se bajó la cubierta (asegurándose de que el perno quede en el centro, ya que este hace contacto con el micro switch que activa el circuito de alto voltaje del tubo de rayos x; si la cubierta no está bien cerrada, el dispositivo no permitirá la emisión de los rayos x), se conectó y giró la llave de seguridad y se giró la perilla de conteo una unidad hacia la izquierda, e instantáneamente se encendió el foco amarillo y el tubo de rayos x, lo que indicó que se comenzó con el calentamiento del filamento. En seguida, se configuró de la siguiente manera el contenedor ORTEC: un voltaje de operación de 708$\,V$ (módulo BIAS SUPPLY), un tiempo de conteo de 20 $\,s$ (módulo TIME), las palancas en \enquote*{NEG} y en \enquote*{UNIT} y una ganancia fina de $14+2$ y una gruesa de $10$ (módulo AMPLIFIER) y la palanca en \enquote*{COUNT} (módulo COUNTER).
+
+Finalmente, se colocó el brazo giratorio en un ángulo inicial de $20^\circ$ (nótese que se trabaja en una escala de $2\theta$), se activó la emisión de rayos x en el TEL-X-OMETER y en el módulo TIMER del contenedor se seleccionó el botón \enquote*{START}; en seguida el display del módulo COUNTER comenzó a mostrar el número de detecciones, y tras los $20\,s$ configurados terminó el conteo. Se registró esta medición (ángulo y conteo), se recorrió al brazo giratorio $4^\circ$, se seleccionó el botón \enquote*{RESET} del módulo COUNTER y nuevamente se presionó \enquote*{START} en el mismo módulo, comenzando una nueva medición y registro. Se continuó de esta misma manera hasta que el brazo giratorio llegó a los $120^\circ$.
+
+Se inició un nuevo \enquote*{barrido} recorriéndolo ahora solo $2^\circ$, donde se partió igualmente en $20^\circ$ pero se terminó en $85^\circ$ por falta de tiempo. Días después, por problemas con los equipos en el laboratorio ya no se pudo continuar con ninguna medición más, por lo que en su lugar se nos brindó un banco de datos de mediciones de tres cristales: dos de NaCl y uno de KCl.
