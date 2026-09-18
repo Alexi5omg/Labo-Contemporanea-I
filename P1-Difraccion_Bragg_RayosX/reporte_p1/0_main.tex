@@ -4,58 +4,74 @@
 \input{Configuracion}
 
 \begin{document}
-
-%%%%%% Titulo %%%%%
-\title{\textcolor{black}{Difracción de Bragg con Rayos X}}  
-
-%%%%% Datos %%%%%
-\author{Ashley Stacy Rosas Galicia}
-\author{Juan Alexis Hernández Hernández}
-\affil{Facultad de Ciencias, Universidad Nacional Autónoma de México, Circuito Exterior s/n, Ciudad Universitaria, Ciudad de México. C. P. 04510 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 11 de septiembre de 2026}
-
-\twocolumn[
-\begin{@twocolumnfalse}
-\maketitle
-\thispagestyle{firstpage}
-\end{@twocolumnfalse}
-
-%%%%% Resumen ESPAÑOL%%%%%
-\begin{abstract}
-Texto
-\vspace{2mm}
-
-%%%%% Palabras clave ESPAÑOL%%%%%
-\begin{IEEEkeywords}
-	palabra1, palabra2
-\end{IEEEkeywords}
-\end{abstract}
-\bigskip
-
-%%%%% Resumen INGLÉS%%%%%
-\begin{otherlanguage}{english}
-\begin{abstract}
-	Texto
-	\vspace{2mm}
 	
-%%%%% Palabras clave INGLÉS%%%%%
-\renewcommand\IEEEkeywordsname{Keywords}
-\begin{IEEEkeywords}
-	palabra1, palabra2
-\end{IEEEkeywords}
-\end{abstract}
-\end{otherlanguage}
-\bigskip
-]
-
-%%%%% Partes del reporte %%%%%
-\input{1_Introducción}\\
-\input{2_Procedimiento}\\
-\input{3_Resultados y Análisis}\\
-\input{4_Conclusiones}\\
-\ifCLASSOPTIONcaptionsoff
-  \newpage
-\fi
-\input{5_Bibliografia}
-\input{6_Anexo}
-
+	%%%%%% Titulo %%%%%
+	\title{\textcolor{black}{Difracción de Bragg con Rayos X}}  
+	
+	%%%%% Datos %%%%%
+	\author{Ashley Stacy Rosas Galicia}
+	\author{Juan Alexis Hernández Hernández}
+	\affil{Facultad de Ciencias, Universidad Nacional Autónoma de México, Circuito Exterior s/n, Ciudad Universitaria, Ciudad de México. C. P. 04510 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 11 de septiembre de 2026}
+	
+	\twocolumn[
+	\begin{@twocolumnfalse}
+		\maketitle
+		\thispagestyle{firstpage}
+	\end{@twocolumnfalse}
+	
+	%%%%% Resumen ESPAÑOL%%%%%
+	\begin{abstract}
+		En este trabajo se estudió la difracción de rayos X en cristales a partir de la ley de Bragg, la cual permite relacionar los ángulos de difracción con la distancia entre los planos cristalinos. Primero, se realizaron mediciones con un cristal de NaCl utilizando el equipo TEX-OLMETER 580. A partir de los conteos registrados se graficó la intensidad en función de $2\theta$ y se identificó un pico alrededor de $28^\circ$. Con una longitud de onda de $\lambda=1.54$ \AA, se obtuvo una distancia interplanar experimental de $3.18$ \AA, cercana al valor teórico de $3.2563$ \AA{} para el plano $(111)$. Asimismo, se calculó un parámetro de red de $5.51$ \AA{}, con un error de $2.1\%$ respecto al valor teórico. Posteriormente, se analizó un cristal desconocido. Debido a una meseta observada en la primera medición, se utilizaron únicamente las mediciones 2 y 3 para obtener el promedio de intensidad. Al comparar los picos obtenidos con el patrón de NaCl, se observaron coincidencias parciales, principalmente en los planos $(400)$ y $(422)$, con errores menores a $1.1\%$. 
+		\vspace{2mm}
+		
+		%%%%% Palabras clave ESPAÑOL%%%%%
+		\begin{IEEEkeywords}
+			palabra1, palabra2
+		\end{IEEEkeywords}
+	\end{abstract}
+	\bigskip
+	
+	%%%%% Resumen INGLÉS%%%%%
+	\begin{otherlanguage}{english}
+		\begin{abstract}
+			This work studied X-ray diffraction in crystals based on Bragg's law, which
+			relates diffraction angles to the distance between crystal planes. First,
+			measurements were carried out using a NaCl crystal with the TEX-OLMETER 580
+			equipment. From the recorded counts, intensity was plotted as a function of
+			$2\theta$, and a peak around $28^\circ$ was identified. Using an X-ray
+			wavelength of $\lambda=1.54$ \AA{}, an experimental interplanar distance of
+			$3.18$ \AA{} was obtained, which is close to the theoretical value of
+			$3.2563$ \AA{} for the $(111)$ plane. In addition, a lattice parameter of
+			$5.51$ \AA{} was calculated, with an error of $2.1\%$ relative to the
+			theoretical value.
+			
+			Subsequently, an unknown crystal was analyzed. Because a plateau was observed
+			in the first measurement, only measurements 2 and 3 were used to calculate the
+			average intensity. When the obtained peaks were compared with the NaCl pattern,
+			partial matches were observed, mainly for the $(400)$ and $(422)$ planes, with
+			errors below $1.1\%$
+			\vspace{2mm}
+			
+			%%%%% Palabras clave INGLÉS%%%%%
+			\renewcommand\IEEEkeywordsname{Keywords}
+			\begin{IEEEkeywords}
+				
+				\textbf{Palabras clave: difracción de rayos X, ley de Bragg, NaCl, distancia interplanar, estructura cristalina.}
+			\end{IEEEkeywords}
+		\end{abstract}
+	\end{otherlanguage}
+	\bigskip
+	]
+	
+	%%%%% Partes del reporte %%%%%
+	\input{1_Introducción}\\
+	\input{2_Procedimiento}\\
+	\input{3_Resultados y Análisis}\\
+	\input{4_Conclusiones}\\
+	\ifCLASSOPTIONcaptionsoff
+	\newpage
+	\fi
+	\input{5_Bibliografia}
+	%\input{6_Anexo}
+	
 \end{document}

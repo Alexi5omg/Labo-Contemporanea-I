@@ -1,7 +1,33 @@
 \textcolor{black}{\section{Resultados y Análisis}}
 
 \section{Cristal de NaCl 1 (mediciones nuestras)}
-\noindent
+\noindent A partir del número de conteos y los ángulos registrados  del TEX-OLMETER 580, se graficó la intensidad en función de los ángulos y se obtuvó la siguiente gráfica: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/1.png}
+	\caption{Conteos vs $2\theta$ de los mediciones registradas a partir del cristal de NaCl, primera imagen es con un barrido de 4° y segunda imagen con un barrido de 2°}
+	\label{fig:placeholder}
+\end{figure}
+Como se puede observar, el tienen un pico entre los ángulos 20° y 40°. Al hacer un zoom, el ángulo en donde las dos gráficas presentan un pico es en el ángulo igual a 28°. Así, sabiendo que la longitud de onda de rayos X es de $\lambda$ = 1.54 $\AA$  y con lo anterior se puede utilizar la ecuación \eqref{eq:bragg} y obtener la distancia interplanar. Con esto, mostramos los resultados obtenidos en la siguiente tabla: 
+
+\begin{table}[h]
+	\centering
+	\small
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Medición & $2\theta$ & Conteos & $d$ & $d$ teórica & Plano & $a$ & $a$ teórica & Error \\
+		\hline
+		1 & $28^\circ$ & 514 & 3.18 \AA & 3.2563 \AA & (111) & 5.51 \AA & 5.63 \AA & 2.1\% \\
+		\hline
+		2 & $28^\circ$ & 246 & 3.18 \AA & 3.2563 \AA & (111) & 5.51 \AA & 5.63 \AA & 2.1\% \\
+		\hline
+		Promedio & $28^\circ$ & 380 & 3.18 \AA & 3.2563 \AA & (111) & 5.51 \AA & 5.63 \AA & 2.1\% \\
+		\hline
+	\end{tabular}
+	\caption{La tabla muestra los resultados para las mediciones que se obtuvieron utilizando el cristal Nacl, se compara la distancia y el parámetro de red obtenido de forma teórica y experimental.}
+	\label{tabla1}
+\end{table}
+Al observar la tabla \ref{tabla1}, podemos concluir que para el primer pico en donde se produce interferencia constructiva, el red de parámetro teórico y experimental tienen un valor cercano. Al obtener el error, obtenemos un valor de $2.1$
 
 \section{Cristal de NaCl 2 (base de datos)} %%%% ES EL "Cristal 1" EN EL EXCEL
 \noindent En la Figura \ref{fig:GRAFICA_CRISTAL-1} se pudo observar una tendencia creciente sin relación alguna con la ley de Bragg, por lo que solo se trabajó con el primer pico (correspopndiende al primer orden de refracción, $n=1$). Este pico correspondió a un ángulo (en escala $2\theta$) de $35^\circ \pm 0.5^\circ$, por lo que el entonces el valor con el que se trabajó en la ley de Bragg fue de
@@ -26,7 +52,53 @@ Se comparó con los valores tabulados para NaCl \cite{NaCl-Teorico} y se encontr
 \end{figure}
 
 \section{Cristal de NaCl 3 (base de datos)} %%%% ES EL "Cristal 4" EN EL EXCEL
-\noindent
+\noindent Para el siguiente cristal, se tenían 3 mediciones. Al igual que en el anterior, se graficó la intensidad (número de conteos) vs $2\theta$. En la primera medición se observó una meseta que movía el promedio de las 3 mediciones para el primer pico, por lo que se decidió tomar el promedio de las mediciones 2 y 3. A continuación se muestran las gráficas de cada una de las mediciones y del promedio: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figs/2.png}
+	\caption{Gráficas de Intesidad vs $2\theta$ obtenidas a partir del cuarto cristal desconocido, se observan 3 mediciones y un promedio de la medición 2 y 3}
+	\label{fig:cristal4}
+\end{figure}
+A partir de los anteriores resultados, se obtuvo la siguiente tabla. Se comparó los resultados con distintos cristales y se obtuvo que el cristal que se acercaba a los valores experimentales de las distancia interplanar y el parámetro de red se trataba de el cristal de Nacl. La siguente tabla muestra la comparación de los valores experimentales con los valores teóricos:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c |c| c |c| c| c |c|}
+		\hline
+		$2\theta_{\mathrm{exp}}$ & Conteos  & $2\theta_{\mathrm{ref}}$ &
+		planos & $d_{\mathrm{exp}}$ & $d_{\mathrm{ref}}$ & Error (\%) \\
+		($^\circ$) & & ($^\circ$) & & (\AA) & (\AA) & \\
+		\hline
+		25.00 & 685.10 & 27.39 & (111) & 3.558 & 3.2563 & 8.73 \\ \hline
+		55.00 & 270.25 & 53.92 & (311) & 1.668 & 1.7005 & 2.00 \\ \hline
+		55.00 & 270.25 & 56.52 & (222) & 1.668 & 1.6281 & 2.69 \\ \hline
+		91.00 & 232.50 & -- & -- & 1.080 & -- & -- \\ 
+		\hline
+	\end{tabular}
+	\label{Tabla-primeros4}
+	\caption{La tabla muestra los resultados para las mediciones que se obtuvieron a partir del cristal 4 , se compara la distancia y el parámetro de red obtenido de forma teórica y experimental.Esta comparación se hace con la suposición que se trata de un cristal de NaCl}
+\end{table}
+Asimismo, se compararon otros ángulos del cristal en donde se obtenían coincidencias. Dichos datos se muestran a continuación: 
+\begin{table}[H]
+	\centering
+	\caption{Comparación de picos secundarios.}
+	\begin{tabular}{|c| c| c |c| c| c| c| c|}
+		\hline
+		$2\theta_{\mathrm{exp}}$ & Conteos exp. & $2\theta_{\mathrm{ref}}$ &
+		Plano & $d_{\mathrm{exp}}$ & $d_{\mathrm{ref}}$ &
+		Error $2\theta$ & Error $d$ \\
+		($^\circ$) & & ($^\circ$) & (HKL) & (\AA) & (\AA) & (\%) & (\%) \\
+		\hline
+		47.00 & 99.55  & 45.49 & (220) & 1.931 & 1.994 & 3.32 & 3.16 \\ \hline
+		66.00 & 160.20 & 66.29 & (400) & 1.414 & 1.410 & 0.44 & 0.28 \\ \hline
+		85.00 & 140.90 & 84.08 & (422) & 1.140 & 1.151 & 1.09 & 0.96 \\
+		\hline
+	\end{tabular}
+	\label{tabla 2 - 4}
+\end{table}
+Como se puede observar, el pico de la tabla \ref{Tabla-primeros4} que más coincide con el valor teórico es el de 55°, dando un error del $2.0\%$. Para el ángulo del de 25° el eror fue de $8.7\%$, esta coincidencia no es suficiente para asociar de manera confiable dicho pico con el plano \((111)\). Asimismo, no se observan picos importantes del Nacl dentro de los picos obtenidos para este cristal.
+
+Ahora, si observamos la tabla \ref{tabla 2 - 4}, las coincidencias más confiables se observan en los picos secundarios. El máximo experimental en \(66^\circ\) coincide con la reflexión \((400)\) de la referencia a \(66.29^\circ\), con errores de $0.44 \%$ en \(2\theta\) y $0.28 \%$ en la distancia interplanar. De manera similar, el pico experimental en \(85^\circ\) concuerda con el plano \((422)\) a \(84.08^\circ\), con errores menores a $1.1 \%$ Estos resultados respaldan la presencia de fases o estructuras relacionadas con el patrón de referencia.
+Los datos muestran coincidencias parciales con el patrón de referencia, particularmente en los planos \((400)\) y (422) Sin embargo no tiene una buena coincidencia en los demás, esto se cree se puede deber a elementos que durante la medición dificultaron obtener los picos de intensidad en los ángulos correspondientes.
 
 \section{Cristal de KCl (base de datos)} %%%% ES EL "Cristal 3" EN EL EXCEL
 \noindent En la Figura \ref{fig:GRAFICA_CRISTAL-3} se pudo observar una tendencia creciente sin relación alguna con la ley de Bragg, por lo que solo se trabajó con el primer pico (correspopndiende al primer orden de refracción, $n=1$). Este pico correspondió a un ángulo (en escala $2\theta$) de $33^\circ \pm 0.5^\circ$, por lo que el entonces el valor con el que se trabajó en la ley de Bragg fue de
