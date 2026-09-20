@@ -1,0 +1,61 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{authblk} % Required for adding multiple author affiliations
+\IEEEoverridecommandlockouts
+\input{Configuracion}
+
+\begin{document}
+
+%%%%%% Titulo %%%%%
+\title{\textcolor{black}{Transiciones ópticas en tierras raras}}  
+
+%%%%% Datos %%%%%
+\author{Ashley Stacy Rosas Galicia}
+\author{Juan Alexis Hernández Hernández}
+\affil{Facultad de Ciencias, Universidad Nacional Autónoma de México, Circuito Exterior s/n, Ciudad Universitaria, Ciudad de México. C. P. 04510 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 2 de octubre de 2026}
+
+\twocolumn[
+\begin{@twocolumnfalse}
+\maketitle
+\thispagestyle{firstpage}
+\end{@twocolumnfalse}
+
+%%%%% Resumen ESPAÑOL%%%%%
+\begin{abstract}
+Texto
+\vspace{2mm}
+
+%%%%% Palabras clave ESPAÑOL%%%%%
+\begin{IEEEkeywords}
+	transistor BJT, conmutación, electrónica
+\end{IEEEkeywords}
+\end{abstract}
+\bigskip
+
+%%%%% Resumen INGLÉS%%%%%
+\begin{otherlanguage}{english}
+\begin{abstract}
+	Texto
+	\vspace{2mm}
+	
+%%%%% Palabras clave INGLÉS%%%%%
+\renewcommand\IEEEkeywordsname{Keywords}
+\begin{IEEEkeywords}
+	transistor BJT, conmutación, electrónica
+\end{IEEEkeywords}
+\end{abstract}
+\end{otherlanguage}
+\bigskip
+]
+
+%%%%% Partes del reporte %%%%%
+\input{1_Introducción}\\
+\input{2_Procedimiento}\\
+\input{3_Resultados y Análisis}\\
+\input{4_Conclusiones}\\
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+\input{5_Bibliografia}
+\input{6_Anexo}
+
+\end{document}
