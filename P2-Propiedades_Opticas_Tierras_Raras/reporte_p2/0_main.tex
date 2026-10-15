@@ -1,4 +1,4 @@
-\documentclass[journal]{IEEEtran}
+ \documentclass[journal]{IEEEtran}
 \usepackage{authblk} % Required for adding multiple author affiliations
 \IEEEoverridecommandlockouts
 \input{Configuracion}
@@ -6,12 +6,13 @@
 \begin{document}
 
 %%%%%% Titulo %%%%%
-\title{\textcolor{black}{Transiciones ópticas en tierras raras}}  
+\title{\textcolor{black}{Propiedades ópticas en tierras raras}}  
 
 %%%%% Datos %%%%%
-\author{Ashley Stacy Rosas Galicia}
 \author{Juan Alexis Hernández Hernández}
-\affil{Facultad de Ciencias, Universidad Nacional Autónoma de México, Circuito Exterior s/n, Ciudad Universitaria, Ciudad de México. C. P. 04510 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 2 de octubre de 2026}
+\author{Ashley Stacy Rosas Galicia\\
+\texttt{Correos: alexi5@ciencias.unam.mx y ashphyrosas@ciencias.unam.mx}}
+\affil{Facultad de Ciencias, Universidad Nacional Autónoma de México, Circuito Exterior s/n, Ciudad Universitaria, Ciudad de México. C. P. 04510 \\ \vspace*{14pt} \fontsize{11}{6}\selectfont 11 de octubre de 2026}
 
 \twocolumn[
 \begin{@twocolumnfalse}
@@ -21,12 +22,36 @@
 
 %%%%% Resumen ESPAÑOL%%%%%
 \begin{abstract}
-Texto
+Se estudió la fotoluminiscencia de materiales dopados con iones de tierras
+raras mediante el análisis de sus espectros de emisión. Las muestras se midieron con dos configuraciones
+experimentales: un espectrómetro PerkinElmer LS55 y un espectrómetro
+Ocean Optics acoplado a una fibra óptica. Para cada banda identificada
+se estimó la longitud de onda máxima y su incertidumbre a partir de la
+anchura a media altura; posteriormente, se calcularon los números de onda
+y sus incertidumbres por propagación. En el vidrio de fosfato de zinc
+dopado con Sm$^{3+}$ se observaron máximos en
+$566.0 \pm 13.5$, $602.5 \pm 14$,
+$648 \pm 14$ y $708\pm 20\,\text{nm}$.
+Con el segundo aparato se obtuvieron bandas en
+$562.2\pm 9.5$, $598.6\pm 0.3$, $645\pm 0.3$ y $705.4\pm 41.2\ ,\text{nm}$
+La cercanía entre ambos conjuntos concuerda con que se midió el mismo
+material, aunque las diferencias pueden relacionarse con la resolución
+y calibración de los equipos. También se observaron variaciones en las
+bandas de emisión del Dy$^{3+}$ al incorporarlo en distintas matrices.
+En el vidrio de tetraborato de litio dopado con Tb$^{3+}$ se encontraron máximos en $492 \pm 18$, $547.5 \pm 11.5$,
+$590 \pm 16.5$ y $625.5 \pm 12.5\,\text{nm}$, mientras que en el cristal de metafostato y ortofosfato de magnesio co-dopado con cloruro de sodio y Eu$^{3+}$ se obtuvieron máximos en $611.52 \pm 5.21$, $592.02 \pm 13.28$,
+$701.71 \pm 7.40$ y $653.22\pm 24.62\,\text{nm}$ y en el cristal de praseodimio se encontraron máximos en $609.44 \pm 33.96$, $640.88 \pm 8.59$,
+$490.49 \pm 18.02$, $525.64\pm 30.25\,$ y $723.12 \pm 1 \text{nm}$.
+En conjunto, los resultados muestran que la matriz anfitriona y las
+condiciones instrumentales deben considerarse al interpretar los
+espectros. Las incertidumbres reportadas son estimaciones visuales de
+la anchura de las bandas y no representan la incertidumbre instrumental.
 \vspace{2mm}
 
 %%%%% Palabras clave ESPAÑOL%%%%%
 \begin{IEEEkeywords}
-	transistor BJT, conmutación, electrónica
+tierras raras; fotoluminiscencia;
+espectros de emisión; transiciones ópticas; samario; disprosio.
 \end{IEEEkeywords}
 \end{abstract}
 \bigskip
@@ -34,13 +59,44 @@ Texto
 %%%%% Resumen INGLÉS%%%%%
 \begin{otherlanguage}{english}
 \begin{abstract}
-	Texto
+The photoluminescence of rare-earth-doped materials was studied by
+analyzing their emission spectra. The samples were measured using two
+experimental configurations: a PerkinElmer LS55 spectrometer and an
+Ocean Optics spectrometer coupled to an optical fiber. For each
+identified emission band, the wavelength of the maximum and its
+uncertainty were estimated from the full width at half maximum (FWHM);
+the corresponding wavenumbers and their uncertainties were subsequently
+calculated by error propagation. For the Sm$^{3+}$-doped zinc phosphate
+glass, emission maxima were observed at $566.0 \pm 13.5$,
+$602.5 \pm 14$, $648 \pm 14$, and $708 \pm 20\,\text{nm}$.
+Measurements with the second instrument yielded bands at
+$562.2 \pm 9.5$, $598.6 \pm 0.3$, $645 \pm 0.3$, and
+$705.4 \pm 41.2\,\text{nm}$. The similarity between both sets of
+wavelengths is consistent with measurements of the same material,
+although the differences may be related to the resolution and
+calibration of the instruments. Variations in the Dy$^{3+}$ emission
+bands were also observed when the ion was incorporated into different
+host matrices. For the Tb$^{3+}$-doped lithium tetraborate glass,
+emission maxima were found at $492 \pm 18$, $547.5 \pm 11.5$,
+$590 \pm 16.5$, and $625.5 \pm 12.5\,\text{nm}$. In the magnesium
+metaphosphate and orthophosphate crystal co-doped with sodium chloride
+and Eu$^{3+}$, emission maxima were obtained at
+$611.52 \pm 5.21$, $592.02 \pm 13.28$, $701.71 \pm 7.40$, and
+$653.22 \pm 24.62\,\text{nm}$. For the praseodymium crystal,
+emission maxima were found at $609.44 \pm 33.96$,
+$640.88 \pm 8.59$, $490.49 \pm 18.02$, $525.64 \pm 30.25$, and
+$723.12 \pm 1\,\text{nm}$. Overall, the results show that both the
+host matrix and the instrumental conditions should be considered when
+interpreting the emission spectra. The reported uncertainties are
+visual estimates of the band widths and do not represent instrumental
+uncertainty.
 	\vspace{2mm}
 	
 %%%%% Palabras clave INGLÉS%%%%%
 \renewcommand\IEEEkeywordsname{Keywords}
 \begin{IEEEkeywords}
-	transistor BJT, conmutación, electrónica
+	rare earths; photoluminescence; emission
+spectra; optical transitions; samarium; dysprosium.
 \end{IEEEkeywords}
 \end{abstract}
 \end{otherlanguage}
